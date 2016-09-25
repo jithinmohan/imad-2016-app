@@ -8,6 +8,7 @@ app.use(morgan('combined'));
 var articleOne = {
     title: 'Article | one',
     heading: 'Article one',
+    date: 'sep5 2016',
     content: `    <p>
                       this is my content for the webpage    this is my content for the webpage   this is my content for the webpage   this is my content for the webpage   this is my content for the webpage   this is my content for the webpage
                   </p>
@@ -49,6 +50,7 @@ var htmlTemplate =`
            <h1>
            ${heading}
            </h1>
+           ${date}
           
               <div>
                  ${content}
