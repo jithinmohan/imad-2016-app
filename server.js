@@ -58,6 +58,7 @@ var htmlTemplate =`
      </body>
 </html>
 `;
+return htmlTemplaete;
 }
 
 
