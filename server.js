@@ -21,7 +21,7 @@ var articles = {
         
     
     },
-    'articles-two': { 
+    'article-two': { 
     title: 'Article | two',
     heading: 'Article two',
     date: 'sep10 2016',
@@ -33,13 +33,14 @@ var articles = {
                   </p>  `
                    
     },
-    'articles-three': { title: 'Article | three',
+    'article-three': { 
+    title: 'Article | three',
     heading: 'Article three',
     date: 'sep5 2016',
     content: `    <p>
                       this is my content for the webpage    this is my content for the webpage   this is my content for the webpage   this is my content for the webpage   this is my content for the webpage   this is my content for the webpage
-                  </p>
-                   `
+                  </p> `
+                   
     }
 };
 
