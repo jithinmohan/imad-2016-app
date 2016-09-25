@@ -4,8 +4,60 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
+var articleOne = {
+    title: 'Article | one',
+    heading: 'Article one',
+    content: `    <p>
+                      this is my content for the webpage    this is my content for the webpage   this is my content for the webpage   this is my content for the webpage   this is my content for the webpage   this is my content for the webpage
+                  </p>
+                   <p>
+                      this is my content for the webpage    this is my content for the webpage   this is my content for the webpage   this is my content for the webpage   this is my content for the webpage   this is my content for the webpage
+                  </p> 
+                  <p>
+                      this is my content for the webpage    this is my content for the webpage   this is my content for the webpage   this is my content for the webpage   this is my content for the webpage   this is my content for the webpage
+                  </p> `,
+    
 
-app.get('/', function (req, res) {
+};
+funtion createTemplete (data){
+    var title = data.title;
+    var date = data.date;
+    var heading = data.heading;
+    var content = data.content;
+}
+var htmlTemplete =
+
+
+<html>
+    <head>
+        <title>${title}</title>
+         <link href="/ui/style.css" rel="stylesheet" />
+    </head>
+     <body>
+      <div class="container" >
+         <div>
+             <a href="/">home</a>
+             <hr/>
+         </div>
+         
+         
+           <h1>${heading}</h1>
+          
+              <div>
+                 ${content}
+              </div>
+      </div>          
+         
+     </body>
+</html>
+
+
+
+
+
+
+
+app.get('/', function (req, res) { 
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 app.get('/article-one',function(req,res){
