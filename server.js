@@ -4,24 +4,43 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-
-var articleOne = {
-    title: 'Article | one',
-    heading: 'Article one',
-    date: 'sep5 2016',
+var articles = {
+     article-one : {
+        title: 'Article | one',
+        heading: 'Article one',
+        date: 'sep5 2016',
+        content: `    <p>
+                          this is my content for the webpage    this is my content for the webpage   this is my content for the webpage   this is my content for the webpage   this is my content for the webpage   this is my content for the webpage
+                      </p>
+                       <p>
+                          this is my content for the webpage    this is my content for the webpage   this is my content for the webpage   this is my content for the webpage   this is my content for the webpage   this is my content for the webpage
+                      </p> 
+                      <p>
+                          this is my content for the webpage    this is my content for the webpage   this is my content for the webpage   this is my content for the webpage   this is my content for the webpage   this is my content for the webpage
+                      </p> `
+        
+    
+    },
+    articles-two : { title: 'Article | two',
+    heading: 'Article two',
+    date: 'sep10 2016',
     content: `    <p>
                       this is my content for the webpage    this is my content for the webpage   this is my content for the webpage   this is my content for the webpage   this is my content for the webpage   this is my content for the webpage
                   </p>
                    <p>
                       this is my content for the webpage    this is my content for the webpage   this is my content for the webpage   this is my content for the webpage   this is my content for the webpage   this is my content for the webpage
                   </p> 
-                  <p>
+                   `
+    },
+    articles-three : { title: 'Article | three',
+    heading: 'Article three',
+    date: 'sep5 2016',
+    content: `    <p>
                       this is my content for the webpage    this is my content for the webpage   this is my content for the webpage   this is my content for the webpage   this is my content for the webpage   this is my content for the webpage
-                  </p> `
-    
-
+                  </p>
+                   `
+    },
 };
-
 
 function createTemplate (data){
     var title = data.title;
