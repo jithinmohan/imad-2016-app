@@ -22,7 +22,7 @@ var articles = {
     
     },
     'articles-two' : { 
-        title: 'Article | two',
+    title: 'Article | two',
     heading: 'Article two',
     date: 'sep10 2016',
     content: `    <p>
@@ -30,8 +30,8 @@ var articles = {
                   </p>
                    <p>
                       this is my content for the webpage    this is my content for the webpage   this is my content for the webpage   this is my content for the webpage   this is my content for the webpage   this is my content for the webpage
-                  </p> 
-                   `
+                  </p>  `
+                   
     },
     'articles-three' : { title: 'Article | three',
     heading: 'Article three',
@@ -40,7 +40,7 @@ var articles = {
                       this is my content for the webpage    this is my content for the webpage   this is my content for the webpage   this is my content for the webpage   this is my content for the webpage   this is my content for the webpage
                   </p>
                    `
-    },
+    }
 };
 
 function createTemplate (data){
